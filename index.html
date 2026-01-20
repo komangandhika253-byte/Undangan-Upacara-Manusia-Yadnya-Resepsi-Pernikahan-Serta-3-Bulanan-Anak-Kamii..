@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Upacara Manusia Yadnya & Resepsi Pernikahan/ Serta 3 Bulanan Anak Kami | Komang & Arisanti</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Musik Latar -->
+    <div class="music-control">
+      <button id="music-toggle">
+        <i class="fas fa-music"></i> <span id="music-status">Putar Musik</span>
+      </button>
+      <audio id="bg-music" loop autoplay>
+        <source
+          src="image/Bali Sound.mpeg"
+          type="audio/mpeg"
+        />
+        Browser Anda tidak mendukung elemen audio.
+      </audio>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-content">
+        <div class="ring"></div>
+        <h2>Memuat Undangan...</h2>
+        <p>Untuk Komang & Arisanti</p>
+      </div>
+    </div>
+
+    <!-- Undangan Utama -->
+    <div class="container" id="main-container">
+      <!-- Header dengan gambar pengantin -->
+      <header class="header">
+        <div class="couple-names">
+          <h1 class="groom-name">Komang</h1>
+          <div class="and-symbol">
+            <span>&</span>
+          </div>
+          <h1 class="bride-name">Arisanti</h1>
+        </div>
+        <p class="subtitle">Undangan Upacara Manusia Yadnya & Resepsi Pernikahan/ Serta 3 Bulanan Anak Kami</p>
+        <div class="wedding-date">
+          <p>Kamis, 22 Januari 2026</p>
+        </div>
+      </header>
+
+      <!-- Cover Undangan -->
+      <section class="cover-section" id="cover">
+        <div class="cover-content">
+          <!-- Slideshow Foto Beranda -->
+          <div class="slideshow-container">
+            <div class="slideshow">
+              <div class="slide active">
+                <img src="image/8.jpeg" alt="Foto Pengantin 1" />
+              </div>
+              <div class="slide">
+                <img src="image/9.jpeg" alt="Foto Pengantin 2" />
+              </div>
+              <div class="slide">
+                <img src="image/10.jpeg" alt="Foto Pengantin 3" />
+              </div>
+            </div>
+            <div class="slideshow-indicators">
+              <span class="indicator active" data-slide="0"></span>
+              <span class="indicator" data-slide="1"></span>
+              <span class="indicator" data-slide="2"></span>
+            </div>
+          </div>
+
+          <div class="cover-text">
+            <h2>Om Swastiastu</h2>
+            <p>
+              Tanpa Mengurangi Rasa Hormat, Perkenankan Kami mengundang
+              Bapak Agung Arinata Untuk Hadir Dalam Acara Undangan Upacara Manusia Yadnya & Resepsi Pernikahan/ Serta 3 Bulanan Anak Kami</p>
+            <button class="open-invitation-btn" id="open-invitation">
+              Buka Undangan <i class="fas fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Isi Undangan (setelah dibuka) -->
+      <main class="invitation-content" id="invitation-content">
+        <!-- Kata Pembuka -->
+        <section class="opening-words">
+          <div class="section-header">
+            <h2><i class="fas fa-quote-left"></i> OM SWASTIASTU</h2>
+          </div>
+          <p>Atas Asung Ketha Wara Nugraha Ida Sang Hyang Widhi Wasa/ Tuhan Yang Maha Esa, Kami Bermaksud Mengundang Bapak/Ibu/ Saudara/ i pada Upacara Manusia Yadnya & Resepsi Pernikahan/ Serta 3 Bulanan Anak Kami</p>
+        </section>
+
+        <!-- Detail Pengantin -->
+        <section class="couple-details">
+          <div class="couple-container">
+            <!-- Mempelai Pria -->
+            <div class="groom-details">
+              <div class="couple-image oval">
+                <img
+                  src="image/WhatsApp Image 2026-01-20 at 00.39.05.jpeg"
+                  alt="Mempelai Pria"
+                />
+              </div>
+              <div class="couple-info">
+                <h3>I Komang Andhika Putra Nurdika</h3>
+              </div>
+            </div>
+
+            <!-- Mempelai Wanita -->
+            <div class="bride-details">
+              <div class="couple-image oval">
+                <img
+                  src="image/0.jpeg"
+                  alt="Mempelai Wanita"
+                />
+              </div>
+              <div class="couple-info">
+                <h3>Ni Putu Wahyu Arisanti</h3>
+            </div>
+          </div>
+        </section>
+
+        <!-- Foto Bayi -->
+        <section class="baby-section">
+          <div class="section-header">
+            <h2><i class="fas fa-child"></i> I Putu Arsyanendra Putra Andhika</h2>
+          </div>
+          <div class="baby-slideshow-container">
+            <div class="baby-slideshow">
+              <div class="baby-slide active">
+                <div class="baby-image-container">
+                  <img
+                    src="image/11.jpeg"
+                    alt="Foto Bayi 1"
+                  />
+                </div>
+              </div>
+              <div class="baby-slide">
+                <div class="baby-image-container">
+                  <img
+                    src="image/11.jpeg"
+                    alt="Foto Bayi 2"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="baby-slide-nav">
+              <button class="baby-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="baby-indicators">
+                <span class="baby-indicator active" data-slide="0"></span>
+                <span class="baby-indicator" data-slide="1"></span>
+              </div>
+              <button class="baby-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Acara -->
+        <section class="event-details">
+          <div class="section-header">
+            <h2><i class="fas fa-calendar-alt"></i> Jadwal Acara</h2>
+          </div>
+
+          <div class="event-cards">
+            <!-- Resepsi -->
+            <div class="event-card">
+              <div class="event-icon">
+                <i class="fas fa-glass-cheers"></i>
+              </div>
+              <div class="event-info">
+                <h3>Resepsi</h3>
+                <p class="event-time">09:00 WITA - Selesai</p>
+                <p class="event-date">Kamis, 22 Januari 2026</p>
+                <p class="event-location">
+                  <i class="fas fa-map-marker-alt"></i> <br />
+                  Jl. Raya Marga-Apuan Tua, Kec. Marga, Kabupaten Tabanan
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lokasi -->
+        <section class="location">
+          <div class="section-header">
+            <h2><i class="fas fa-map-marked-alt"></i> Lokasi Acara</h2>
+          </div>
+          <div class="map-container">
+            <div class="map-placeholder" id="map-placeholder">
+              <div class="map-info">
+                <p>Jl. Raya Marga-Apuan Tua, Kec. Marga, Kabupaten Tabanan</p>
+                <a
+                  href="https://maps.app.goo.gl/CFtxJHf4BHs6qhd16"
+                  target="_blank"
+                  class="map-link"
+                >
+                  <i class="fas fa-directions"></i> Buka di Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Countdown -->
+        <section class="countdown-section">
+          <div class="section-header">
+            <h2><i class="fas fa-clock"></i> Hitung Mundur</h2>
+          </div>
+          <div class="countdown-container">
+            <div class="countdown-box">
+              <div class="countdown-number" id="days">00</div>
+              <div class="countdown-label">Hari</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number" id="hours">00</div>
+              <div class="countdown-label">Jam</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Menit</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Detik</div>
+            </div>
+          </div>
+          <p class="countdown-text">Menuju hari bahagia kami</p>
+        </section>
+
+        <!-- Galeri -->
+        <section class="gallery">
+          <div class="section-header">
+            <h2><i class="fas fa-images"></i> Galeri Kami</h2>
+          </div>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img
+                src="image/1.jpeg"
+                alt="Pertemuan pertama"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="image/2.jpeg"
+                alt="Pre-wedding"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="image/4.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+             <div class="gallery-item">
+              <img
+                src="image/5.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+             <div class="gallery-item">
+              <img
+                src="image/6.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+             <div class="gallery-item">
+              <img
+                src="image/7.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+             <div class="gallery-item">
+              <img
+                src="image/8.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+             <div class="gallery-item">
+              <img
+                src="image/9.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+             <div class="gallery-item">
+              <img
+                src="image/10.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+             <div class="gallery-item">
+              <img
+                src="image/12.jpeg"
+                alt="Momen spesial"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Penutup -->
+        <section class="closing">
+          <div class="section-header">
+            <h2><i class="fas fa-hands-praying"></i> Penutup</h2>
+          </div>
+          <p>
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+            Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.
+          </p>
+          </p>
+          <div class="closing-signature">
+            <p>Yang berbahagia,</p>
+            <h3>Keluarga Besar Komang & Arisanti</h3>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Terima kasih atas perhatian dan doa restunya</p>
+        </div>
+        <p class="footer-note">
+          © 2026 Undangan Pernikahan Digital Komang & Arisanti
+        </p>
+      </footer>
+    </div>
+
+    <!-- Tombol kembali ke atas -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
